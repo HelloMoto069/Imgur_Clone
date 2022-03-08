@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://sunrust.org/wiki/images/f/fc/Imgur_icon.png"
+      type="image/png"
+    />
+    <title>Imgur</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="navbar_div">
+        <div id="nav">
+          <div id="left">
+            <div class="logo">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Imgur_Logo_Light.svg/1280px-Imgur_Logo_Light.svg.png"
+                alt=""
+              />
+            </div>
+            <div class="new_post_div">
+              <a class="new_post">
+                <img
+                  src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg"
+                  class=""
+                />
+                <span> New post </span>
+              </a>
+            </div>
+          </div>
+          <div id="center">
+            <div class="searchbar">
+              <input
+                id="search-box"
+                oninput="debounce(main,1000)"
+                type="text"
+                placeholder="Images, #tags, @users oh my!"
+              />
+              <button class="search">
+                <img
+                  class="search"
+                  src="https://s.imgur.com/desktop-assets/desktop-assets/icon-search.8d0f9b564a4659d48d8eca38b968a7f2.svg"
+                />
+              </button>
+            </div>
+            <div id="searchitem"></div>
+          </div>
+          <div id="right">
+            <div class="rightsideitems">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="32"
+                height="32"
+                viewBox="0 0 172 172"
+                style="fill: #ffffff"
+              >
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M86,107.5c19.7585,0 35.83333,-16.07483 35.83333,-35.83333c0,-19.7585 -16.07483,-35.83333 -35.83333,-35.83333c-19.7585,0 -35.83333,16.07483 -35.83333,35.83333c0,19.7585 16.07483,35.83333 35.83333,35.83333zM86,43c15.80967,0 28.66667,12.857 28.66667,28.66667c0,15.80967 -12.857,28.66667 -28.66667,28.66667c-15.80967,0 -28.66667,-12.857 -28.66667,-28.66667c0,-15.80967 12.857,-28.66667 28.66667,-28.66667z"
+                    ></path>
+                    <path
+                      d="M29.27583,86.86717l-5.6545,17.759c-0.30817,0.95317 -0.18633,1.9995 0.31533,2.87383c0.50167,0.87433 1.34733,1.49067 2.33633,1.70567l18.20333,3.98467l3.98467,18.20333c0.215,0.98183 0.83133,1.83467 1.70567,2.33633c0.87433,0.50167 1.92783,0.61633 2.87383,0.30817l17.76617,-5.6545l12.54167,13.77433c0.688,0.7525 1.64117,1.17533 2.65167,1.17533c1.0105,0 1.96367,-0.42283 2.65167,-1.16817l12.54167,-13.77433l17.76617,5.6545c0.95317,0.301 1.9995,0.1935 2.87383,-0.30817c0.87433,-0.50167 1.49067,-1.3545 1.70567,-2.33633l3.98467,-18.20333l18.20333,-3.98467c0.989,-0.215 1.83467,-0.8385 2.33633,-1.70567c0.50167,-0.87433 0.6235,-1.92067 0.31533,-2.881l-5.6545,-17.759l13.77433,-12.54883c0.73817,-0.68083 1.16817,-1.64117 1.16817,-2.65167c0,-1.0105 -0.43,-1.97083 -1.16817,-2.65167l-13.77433,-12.54883l5.6545,-17.759c0.30817,-0.95317 0.18633,-1.9995 -0.31533,-2.87383c-0.50167,-0.87433 -1.34733,-1.49067 -2.33633,-1.70567l-18.20333,-3.98467l-3.98467,-18.20333c-0.215,-0.98183 -0.83133,-1.83467 -1.70567,-2.33633c-0.87433,-0.50167 -1.92783,-0.61633 -2.87383,-0.30817l-17.76617,5.64733l-12.54167,-13.77433c-1.36883,-1.49067 -3.9345,-1.49067 -5.30333,0l-12.54167,13.77433l-17.76617,-5.6545c-0.946,-0.30817 -1.9995,-0.18633 -2.87383,0.31533c-0.87433,0.50167 -1.49067,1.3545 -1.70567,2.33633l-3.98467,18.20333l-18.20333,3.98467c-0.989,0.215 -1.83467,0.83133 -2.33633,1.70567c-0.50167,0.87433 -0.6235,1.92067 -0.31533,2.881l5.6545,17.759l-13.77433,12.54167c-0.73817,0.68083 -1.16817,1.64117 -1.16817,2.65167c0,1.0105 0.43,1.97083 1.16817,2.65167zM35.80467,60.2215c1.03917,-0.93883 1.42617,-2.40083 1.00333,-3.73383l-5.16717,-16.19667l16.60517,-3.6335c1.36883,-0.301 2.43667,-1.36167 2.73767,-2.7305l3.6335,-16.60517l16.20383,5.16c1.333,0.42283 2.795,0.02867 3.73383,-1.00333l11.44517,-12.57033l11.44517,12.56317c0.95317,1.032 2.41517,1.42617 3.73383,1.00333l16.20383,-5.16l3.6335,16.60517c0.301,1.36883 1.36167,2.43667 2.73767,2.7305l16.60517,3.6335l-5.16717,16.19667c-0.43,1.333 -0.03583,2.795 1.00333,3.73383l12.57033,11.45233l-12.57033,11.44517c-1.03917,0.93883 -1.42617,2.40083 -1.00333,3.73383l5.16717,16.19667l-16.60517,3.6335c-1.36883,0.301 -2.43667,1.36167 -2.73767,2.7305l-3.6335,16.60517l-16.20383,-5.16c-1.333,-0.41567 -2.795,-0.03583 -3.73383,1.00333l-11.44517,12.57033l-11.44517,-12.56317c-0.69517,-0.7525 -1.6555,-1.16817 -2.65167,-1.16817c-0.3655,0 -0.731,0.05733 -1.08217,0.16483l-16.20383,5.16l-3.6335,-16.60517c-0.301,-1.36883 -1.36167,-2.43667 -2.73767,-2.7305l-16.60517,-3.6335l5.16717,-16.19667c0.43,-1.333 0.03583,-2.795 -1.00333,-3.73383l-12.57033,-11.45233z"
+                    ></path>
+                    <path
+                      d="M53.75,138.53167c-1.978,0 -3.58333,1.60533 -3.58333,3.58333v26.30167c0,1.21117 0.61633,2.3435 1.634,3.00283c1.0105,0.65217 2.28617,0.7525 3.41133,0.27233l30.788,-13.68833l30.79517,13.68833c0.46583,0.20783 0.96033,0.30817 1.45483,0.30817c0.688,0 1.36167,-0.1935 1.94933,-0.5805c1.01767,-0.65933 1.634,-1.79167 1.634,-3.00283v-26.30167c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333c-1.978,0 -3.58333,1.60533 -3.58333,3.58333v20.78333l-27.21183,-12.09733c-0.9245,-0.41567 -1.98517,-0.41567 -2.90967,0l-27.21183,12.09733v-20.78333c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <button class="addfree">Go Add-Free</button>
+              <button class="signin">Sign in</button>
+              <button class="signup">Sign up</button>
+            </div>
+          </div>
+        </div>
+        <div class="message">You don't browse Imgur? Seems kinda sus. </div>
+        <div id="trending_tags">
+            <span>Explore Tags</span>
+            <span>MORE TAGS +</span>
+        </div>
+        <div id="header-card">
+            <div class="h_card">
+                <img src="./Images/image1.png" alt="" srcset="">
+            </div>
+            <div class="h_card">
+                <img src="./Images/2.png" alt="" srcset="">
+            </div>
+            <div class="h_card">
+                <img src="./Images/3.png" alt="" srcset="">
+            </div>
+            <div class="h_card">
+                <img src="./Images/4.png" alt="" srcset="">
+            </div>
+            <div class="h_card">
+                <img src="./Images/5.png" alt="" srcset="">
+            </div>
+            <div class="h_card">
+                <img src="./Images/6.png" alt="" srcset="">
+            </div>
+            <div class="h_card">
+                <img src="./Images/7.png" alt="" srcset="">
+            </div>
+            <div class="h_card">
+                <img src="./Images/8.png" alt="" srcset="">
+            </div>
+            <div class="h_card">
+                <img src="./Images/9.png" alt="" srcset="">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="cardscontainer">
+      <div id="cardsDiv">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./index.js"></script>
